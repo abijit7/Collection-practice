@@ -7,6 +7,7 @@ import java.util.List;
 
 public class ArrayListt {
     static void main() {
+
         List<String> studenta =  new ArrayList<>();
         studenta.add("Satyarth");
         studenta.add("Rohit");

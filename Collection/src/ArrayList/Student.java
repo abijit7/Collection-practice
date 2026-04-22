@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class Student {
     static void main() {
+
         List<Account> students = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
         students.add(new Account(1, "Satyarth", 90.5));
@@ -13,7 +14,6 @@ public class Student {
         students.add(new Account(3, "Soham", 92.0));
         System.out.println("Enter student ID to search:");
         int idSearch = scanner.nextInt();
-
         boolean found = false;
         for (Account student : students) {
             if (student.getId() == idSearch) {
@@ -31,5 +31,7 @@ public class Student {
 
         int removeid = scanner.nextInt();
         students.removeIf(s -> s.getId() == removeid);
+
     }
+
 }
